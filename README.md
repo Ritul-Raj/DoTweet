@@ -1,3 +1,5 @@
+# DoTweet
+
 The GitHub repository [DoTweet](https://github.com/Ritul-Raj/DoTweet) is a Twitter clone built using Django and Django REST framework. It features user authentication, tweet creation, and a RESTful API for managing tweets. The project is designed to help developers understand how to implement a microblogging platform with Django.
 
 **Features:**
