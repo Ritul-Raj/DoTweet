@@ -1,64 +1,72 @@
-# TweetHub
+The GitHub repository [DoTweet](https://github.com/Ritul-Raj/DoTweet) is a Twitter clone built using Django and Django REST framework. It features user authentication, tweet creation, and a RESTful API for managing tweets. The project is designed to help developers understand how to implement a microblogging platform with Django.
 
-TweetHub is a Twitter-like application built with Django. It allows users to sign up, log in, log out, create tweets, edit tweets, and delete tweets. Users can also add images to their tweets.
+**Features:**
 
-![TweetHub](https://github.com/aniketpatidar/TweetHub/blob/main/media/photos/Screenshot%20from%202024-06-22%2011-05-10.png)
+- User authentication (registration and login)
+- Create, read, update, and delete tweets
+- Follow and unfollow users
+- Like and unlike tweets
+- RESTful API for managing tweets
 
-## Features
-
-- User Authentication: Sign up, log in, and log out
-- Create, Read, Update, and Delete (CRUD) tweets
-- Add images to tweets
-
-## Getting Started
-
-### Prerequisites
-
-- Python 3.x
-- Django 3.x or later
-
-### Installation
+**Installation:**
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/aniketpatidar/TweetHub.git
+   git clone https://github.com/Ritul-Raj/DoTweet.git
+   cd DoTweet
    ```
-2. Navigate to the project directory:
+
+2. Create a virtual environment and activate it:
 
    ```bash
-   cd TweetHub
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
    ```
-3. Create and activate a virtual environment:
 
-   ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate
-   ```
-4. Install the required dependencies:
+3. Install the required dependencies:
 
    ```bash
    pip install -r requirements.txt
    ```
-5. Apply the migrations:
+
+4. Apply migrations:
 
    ```bash
    python manage.py migrate
    ```
-6. Create a superuser to access the admin panel:
+
+5. Create a superuser account:
 
    ```bash
    python manage.py createsuperuser
    ```
-7. Start the development server:
+
+6. Start the development server:
 
    ```bash
    python manage.py runserver
    ```
-8. Open your web browser and go to [http://127.0.0.1:8000/tweet/](http://127.0.0.1:8000/tweet/) to see the application in action.
 
-## Shoutout
+7. Access the application at `http://127.0.0.1:8000/`.
 
-Special thanks to [@hiteshchoudhary](https://github.com/hiteshchoudhary) for his amazing YouTube video that inspired this project.
+**API Endpoints:**
 
-[![Build a full stack project in Django for beginners](https://img.youtube.com/vi/opzK3E4Xx6o/0.jpg)](https://www.youtube.com/watch?v=opzK3E4Xx6o)
+- `/api/tweets/`
+  - GET: List all tweets
+  - POST: Create a new tweet
+
+- `/api/tweets/<id>/`
+  - GET: Retrieve a specific tweet
+  - PUT: Update a specific tweet
+  - DELETE: Delete a specific tweet
+
+**Contributing:**
+
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+**License:**
+
+This project is licensed under the MIT License.
+
+For more details, please refer to the [GitHub repository](https://github.com/Ritul-Raj/DoTweet). 
